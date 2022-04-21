@@ -219,7 +219,7 @@ img {
   border-bottom-color: var(--main-gray);
 }
 
-.card a:hover {
+.author-info a:hover {
   color: var(--light-blue);
 }
 
