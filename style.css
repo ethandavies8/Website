@@ -177,7 +177,7 @@ img {
 
 /* Blog Section */
 .blog-header {
-  padding-top: 40px;
+  padding-top: 15px;
   margin-left: 20px;
   border-bottom-style:solid; 
   border-bottom-width: .3em;
@@ -193,6 +193,17 @@ img {
   float: left;
   width: 25%;
   padding-left: 20px;
+}
+
+.recent-post{
+  float:left;
+  width:50%;
+  padding: 10px;
+}
+.recent-project{
+ float:right;
+ width:50%;
+ padding: 10px;
 }
 
 .author-info {
@@ -223,6 +234,10 @@ img {
   color: var(--light-blue);
 }
 
+.popular-img{
+  width: 20rem;
+  height: 10rem;
+}
 
 .row:after {
   content: "";
