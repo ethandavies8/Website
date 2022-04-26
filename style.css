@@ -255,7 +255,10 @@ img {
 @media screen and (max-width: 800px) {
 
   .leftcolumn,
-  .rightcolumn {
+  .rightcolumn,
+  .recent-post,
+  .recent-project,
+  .bottom-section {
     width: 100%;
     padding: 0;
   }
