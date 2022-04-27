@@ -198,17 +198,17 @@ img {
 .recent-post{
   float:left;
   width:50%;
-  padding: 10px;
+  padding: 25px;
 }
 .recent-project{
  float:right;
  width:50%;
- padding: 10px;
+ padding: 25px;
 }
 
 .author-info {
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .about-me-photo {
@@ -222,21 +222,39 @@ img {
   padding: 20px;
 }
 
+.blog-img {
+  padding-bottom: 10px;
+}
+
 .card {
   padding: 20px;
   margin-top: 20px;
   border-bottom-style: double;
   border-bottom-width: .15em;
   border-bottom-color: var(--main-gray);
+  align-items: center;
+
+}
+
+.card >h3 {
+  
+  border-bottom-style: double;
+  border-bottom-width: .15em;
+  border-bottom-color: var(--main-gray);
+  margin-bottom: 50px;
 }
 
 .author-info a:hover {
   color: var(--light-blue);
+  text-decoration: underline;
 }
 
 .popular-img{
   width: 20rem;
   height: 10rem;
+}
+.popular-text{
+  padding-bottom: 20px;
 }
 
 .row:after {
@@ -244,7 +262,24 @@ img {
   display: table;
   clear: both;
 }
-
+.bottom-section {
+  width: 100%;
+  float: left;
+}
+.bottom-left-column {
+  float: left;
+  width: 37.5%;
+}
+.bottom-right-column {
+  float: left;
+  width: 37.5%;
+  padding-top: 50px;
+}
+.last-recent-post {
+  padding: 25px;
+  width: 25%;
+  float: left;
+}
 .footer {
   padding: 20px;
   text-align: center;
@@ -258,7 +293,8 @@ img {
   .rightcolumn,
   .recent-post,
   .recent-project,
-  .bottom-section {
+  .bottom-section,
+  .bottom-image {
     width: 100%;
     padding: 0;
   }
