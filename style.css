@@ -245,11 +245,15 @@ img {
 
 }
 
-.card >h3 {
+.card >h3  {
   
   border-bottom-style: double;
   border-bottom-width: .15em;
   border-bottom-color: var(--main-gray);
+  margin-bottom: 50px;
+}
+
+.card >p {
   margin-bottom: 50px;
 }
 
