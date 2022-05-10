@@ -309,6 +309,17 @@ img {
 .project-section{
   margin-top: 25px;
 }
+
+.project-section h2:hover{
+  color: var(--light-blue);
+}
+
+.hex-colors{
+  border: 1px solid black;
+  width: 50%;
+  text-align: center;
+  margin-top: 2rem;
+}
 .footer {
   padding: 20px;
   text-align: center;
