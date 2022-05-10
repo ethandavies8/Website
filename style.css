@@ -283,10 +283,12 @@ img {
 .bottom-left-column {
   float: left;
   width: 37.5%;
+  margin: 25px;
 }
 .bottom-right-column {
   float: left;
   width: 37.5%;
+  margin: 25px;
   padding-top: 50px;
 }
 .last-recent-post {
