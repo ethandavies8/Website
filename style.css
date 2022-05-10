@@ -158,6 +158,7 @@ img {
 
 .nav-list a:hover {
   background: var(--main-blue);
+  text-decoration: none;
 }
 
 /* Contact Information */
@@ -292,10 +293,19 @@ img {
   padding: 25px;
   width: 25%;
   float: left;
+  padding-top: 50px;
+}
+.last-recent-post h2:hover{
+  text-decoration:underline;
+  color: var(--light-blue);
 }
 .card a:hover {
   text-decoration:underline;
   color: var(--light-blue);
+}
+
+.project-section{
+  margin-top: 25px;
 }
 .footer {
   padding: 20px;
