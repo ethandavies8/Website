@@ -139,6 +139,10 @@ img {
   margin-right: 2rem;
 }
 
+.nav-list a:hover {
+  border: solid var(--main-white) .5px;
+}
+
 @media (max-width: 28.75em) {
   .nav {
     justify-content: center;
@@ -310,15 +314,30 @@ img {
   margin-top: 25px;
 }
 
-.project-section h2:hover{
-  color: var(--light-blue);
+
+.website-updates{
+  width: 50%;
+  float: left;
 }
+
+.website-updates h1{
+  text-align: center;
+}
+
+.javascript-projects{
+  width: 50%;
+  float: left;
+}
+
+
 
 .hex-colors{
   border: 1px solid black;
-  width: 50%;
+  margin: 25px;
   text-align: center;
-  margin-top: 2rem;
+}
+.hex-colors h2:hover{
+  color: var(--light-blue);
 }
 .footer {
   padding: 20px;

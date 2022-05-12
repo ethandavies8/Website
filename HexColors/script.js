@@ -10,5 +10,4 @@ function changeColor(){
  }
  document.getElementById("hex-code").innerHTML = hexcode;
  document.getElementsByTagName("body")[0].style.background = "#" + hexcode;
-
 }
