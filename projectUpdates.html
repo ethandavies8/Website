@@ -54,13 +54,61 @@
             </div>
         </div>
         <div class="javascript-projects">
-                <h1><u>Other Projects</u></h1>
+            <h1><u>Other Projects</u></h1>
             <div class="card">
                 <div class="hex-colors">
                     <a href="https://github.com/ethandavies8/2048Game">
-                    <h2>2048 Project (5/15/22)</h2></a>
-                    <p>Here I am recreating the game 2048. As of 5/15/22 I have completed the logic, however the GUI
-                        still needs to be done, and I expect it may take me a while.  When I have completed recreating the game,
+                        <h2>2048 Project (5/15/22 start date)</h2>
+                    </a>
+                    <h4><u>5/19/2022</u></h4>
+                    <div>
+                        <p>
+                            As of today, the game is now playable. I have recreated 2048 as a windows form project. The
+                            windows form
+                            project has a reference to a board class. The board class contains a bunch of tiles as a 2D
+                            matrix, each tile
+                            contains a value and color attribute. </p>
+                        <p>As of the current build there is a bug where at a certain point the GUI
+                            stops responding, I am so far unable to discover what is causing it, although it seems related
+                            to indexing in some regard.
+                            I am fairly pleased with the overrall look, and have matched the original fairly well, however I
+                            would like to center the
+                            text within the boxes. It has been annoyingly difficult to try to vertically align text within a
+                            text box.  The game currently has no way to restart, no game over, and no high score, these are next to be implemented.
+
+
+                        </p>
+                        <img src="PostImages/noMoves.png" style="height: 25%; width: 50%;"></img>
+                        <p>Unable to make moves at this point, it appears to be happening when there is a full row of 0's on
+                            an edge, with another edge
+                            also having 0's.
+                        </p>
+                    </div>
+                   <div>
+                       <img src="PostImages/textBoxBad.PNG" style="height: 75%; width: 50%;"></img>
+                    <p>I would like to change from not using text boxes, as currently it makes for a gross looking setBoxes method.
+                        I require a more elegant solution, but i'm not yet familiar enough with windows forms to make one.  I only need
+                        to represent a 2D matrix, I tried to use tableLayoutPanel, but was having null pointer exceptions for Controls.
+                        Everything is also ran through the keyDown event, and the keyDown event triggers spawnTile, score updates, and then calls the setBoxes method.
+                        This isn't the worst implementation but feels against MVC.
+                    </p>
+                    <p>
+                        Overrall, I have built basic functionality and the app is usable at this point.  I will be going back through the clean up logic,
+                        more properly follow MVC, and add additional features.  This was my first personal project I have made, and this is only the beginning of my
+                        journey with this project.  As I stated previously, when I am content with the app, I will write an algorithm to "autosolve" with
+                        the quickest run time I can.  I would also like to duplicate this project as a javascript project.  Since the original game runs
+                        through javascript in a web browser, rather than through c# as a windows form.  It would be a good transitional point to get more comfortable
+                        with using javascript, and I could customize the look very heavily using html and css.
+
+                    </p>
+                   </div>
+                    
+
+
+                    <h4><u>5/15/22</u></h4>
+                    <p>Here I am recreating the game 2048. I have completed the logic, however the GUI
+                        still needs to be done, and I expect it may take me a while. When I have completed recreating
+                        the game,
                         I will create an algorithm to solve it extremely quickly.
                     </p>
                 </div>

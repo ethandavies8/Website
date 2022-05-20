@@ -337,6 +337,9 @@ img {
 .hex-colors h2:hover{
   color: var(--light-blue);
 }
+.hex-colors p{
+  margin-bottom: 25px;
+}
 .footer {
   padding: 20px;
   text-align: center;
