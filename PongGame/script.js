@@ -21,7 +21,7 @@ let dxd = Math.floor(Math.random() * 2);
 let dyd = Math.floor(Math.random() * 2);
 
 document.addEventListener('keydown', (e) => {
-if (e.key == 'Enter' && gameState == 'start'){
+if (e.key == 'Enter'){
         message.innerHTML = '';
         message.style.left = 42 + 'vw';
         requestAnimationFrame(() => {
