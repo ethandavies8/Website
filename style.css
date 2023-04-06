@@ -41,6 +41,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: var(--main-black);
+  margin: auto;
 }
 
 p {
@@ -77,6 +78,10 @@ a {
   text-decoration: none;
   color: var(--main--black);
 
+}
+a:hover{
+text-decoration:underline;
+color:var(--light-blue);
 }
 
 img {
@@ -134,6 +139,10 @@ img {
   margin-right: 2rem;
 }
 
+.nav-list a:hover {
+  border: solid var(--main-white) .5px;
+}
+
 @media (max-width: 28.75em) {
   .nav {
     justify-content: center;
@@ -153,6 +162,7 @@ img {
 
 .nav-list a:hover {
   background: var(--main-blue);
+  text-decoration: none;
 }
 
 /* Contact Information */
@@ -198,17 +208,21 @@ img {
 .recent-post{
   float:left;
   width:50%;
-  padding: 10px;
+  padding: 25px;
+  min-height: auto;
+  min-width: auto;
 }
 .recent-project{
  float:right;
  width:50%;
- padding: 10px;
+ padding: 25px;
+ min-height: auto;
+ min-width: auto;
 }
 
 .author-info {
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .about-me-photo {
@@ -222,21 +236,43 @@ img {
   padding: 20px;
 }
 
+.blog-img {
+  padding-bottom: 10px;
+}
+
 .card {
   padding: 20px;
   margin-top: 20px;
   border-bottom-style: double;
   border-bottom-width: .15em;
   border-bottom-color: var(--main-gray);
+  align-items: center;
+
+}
+
+.card >h3  {
+  
+  border-bottom-style: double;
+  border-bottom-width: .15em;
+  border-bottom-color: var(--main-gray);
+  margin-bottom: 50px;
+}
+
+.card >p {
+  margin-bottom: 50px;
 }
 
 .author-info a:hover {
   color: var(--light-blue);
+  text-decoration: underline;
 }
 
 .popular-img{
   width: 20rem;
   height: 10rem;
+}
+.popular-text{
+  padding-bottom: 20px;
 }
 
 .row:after {
@@ -244,7 +280,66 @@ img {
   display: table;
   clear: both;
 }
+.bottom-section {
+  width: 100%;
+  float: left;
+}
+.bottom-left-column {
+  float: left;
+  width: 37.5%;
+  margin: 25px;
+}
+.bottom-right-column {
+  float: left;
+  width: 37.5%;
+  margin: 25px;
+  padding-top: 50px;
+}
+.last-recent-post {
+  padding: 25px;
+  width: 25%;
+  float: left;
+  padding-top: 50px;
+}
+.last-recent-post h2:hover{
+  text-decoration:underline;
+  color: var(--light-blue);
+}
+.card a:hover {
+  text-decoration:underline;
+  color: var(--light-blue);
+}
 
+.project-section{
+  margin-top: 25px;
+}
+
+
+.website-updates{
+  width: 50%;
+  float: left;
+}
+
+.website-updates h1{
+  text-align: center;
+}
+
+.javascript-projects{
+  width: 50%;
+  float: left;
+}
+
+.hex-colors{
+  border: 1px solid black;
+  margin: 25px;
+  text-align: center;
+}
+.hex-colors h2:hover{
+  color: var(--light-blue);
+}
+.hex-colors p{
+  margin-bottom: 25px;
+}
 .footer {
   padding: 20px;
   text-align: center;
@@ -258,9 +353,29 @@ img {
   .rightcolumn,
   .recent-post,
   .recent-project,
-  .bottom-section {
+  .bottom-section,
+  .bottom-image,
+  .bottom-left-column,
+  .bottom-right-column,
+  .last-recent-post {
     width: 100%;
     padding: 0;
   }
 }
+@media screen and (max-width:1600px){
+  .leftcolumn,
+  .rightcolumn,
+  .recent-post,
+  .recent-project,
+  .bottom-section,
+  .bottom-image,
+  .bottom-left-column,
+  .bottom-right-column,
+  .last-recent-post{
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
 

@@ -1,0 +1,74 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ body{
+    display: flex;
+ }
+
+ .gameboard{
+    border: 10px solid black;
+    height: 98vh;
+    width: 100vw;
+    background-color: rgb(92, 207, 161);
+ }
+
+ .ball{
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    left: 50vw;
+    top: 45vh;
+    border-radius: 50%;
+    background-color: gray;
+ }
+ .paddle{
+    height: 120px;
+    width: 15px;
+    position: fixed;
+    background-color: white;
+ }
+
+ .player1 {
+    top: 40vh;
+    left: .6vw;
+
+ }
+
+.player1_score {
+    margin-top: 30px;
+    left: 30vw;
+    height: 50px;
+    width: 40px;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    text-shadow: -3px -3px 0 black, -3px -3px 0 black, -3px -3px 0 black, -3px -3px 0 black;
+    position: fixed;
+}
+
+ .player2 {
+    top: 40vh;
+    right: .6vw;
+ }
+
+ .player2_score {
+    margin-top: 30px;
+    right: 30vw;
+    height: 50px;
+    width: 40px;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    text-shadow: -3px -3px 0 black, -3px -3px 0 black, -3px -3px 0 black, -3px -3px 0 black;
+    position: fixed;
+}
+
+ .startMessage {
+    position: fixed;
+    height: 10vh;
+    width: 30vw;
+    left: 40vw;
+    top: 50vh;
+    font-size: 48px;
+    font-family:'Times New Roman', Times, serif;
+ }
