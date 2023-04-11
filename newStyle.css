@@ -6,8 +6,9 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: #fcfcfc;
-    --primary-color: #4756df;
+    --bg-color: #f7f3f3;
+    --nav-bg-color: #0bd45f;
+    --primary-color: #000000;
     --secondary-color: #ff7235;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
@@ -40,7 +41,7 @@ a {
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: black;
 }
 
 body {
@@ -56,7 +57,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+    background-color: var(--nav-bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -93,6 +94,8 @@ nav ul li {
 }
 
 .hero {
+    padding-top: 2rem;
+    padding-bottom: 2-rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,8 +105,8 @@ nav ul li {
 }
 
 .hero img {
-    height: 37.5rem;
-    width: 37.5rem;
+    height: 25rem;
+    width: 25rem;
 }
 
 .bio {
@@ -172,8 +175,8 @@ nav ul li {
 }
 
 .project-pic {
-    width: 65%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
 }
 
 .projects-container {
@@ -181,6 +184,7 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .projects-title {
@@ -190,8 +194,10 @@ nav ul li {
 
 .project-container {
     text-align: center;
-    width: 20.875rem;
+    width: 50rem;
     padding: 1rem;
+
+    flex-direction: row;
 }
 
 .project-container p {
@@ -207,6 +213,8 @@ nav ul li {
 }
 
 .project-card {
+    column-count: 2;
+    column-gap: 2rem;
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
@@ -214,7 +222,69 @@ nav ul li {
     margin: 10px;
 }
 
-.contact {
+.btn-small {
+    padding: 0.5rem 1rem;
+}
+
+.btn-small a:hover {
+    color: var(black);
+}
+
+.btn-blue {
+    color: white;
+    border: 2px solid #3b82f6;
+    background-color: #1fb35c;
+}
+
+.btn-blue-outline {
+    color: white;
+    background-color: #3b82f6;
+    border: 2px solid #089e47;
+}
+
+.btn,
+.btn-blue,
+.btn-dark,
+.btn-blue-outline {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.mx-1 {
+    margin: 0 0.5rem;
+    text-align: left;
+}
+
+.made-with {
+    color: gray;
+    padding: 0%;
+    margin-block-end: 0;
+    text-align: right;
+    margin-top: 0.2rem;
+}
+
+.made-with-split {
+    column-count: 2;
+    column-gap: 0;
+}
+
+.minicon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.5rem;
+    align-content: left;
+    padding: 0%;
+    margin: auto;
+
+
+}
+
+.p .contact {
     margin-top: 2rem;
 }
 
@@ -271,7 +341,7 @@ nav ul li {
 }
 
 .submit-btn:hover {
-    background-color: var(--primary-color);
+    background-color: #11df67;
     border: 2px solid var(--primary-color);
     cursor: pointer;
 }
