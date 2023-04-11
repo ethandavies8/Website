@@ -6,9 +6,8 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: #e0e0e0;
-    --nav-text-color: #f1eeee;
-    --nav-bg-color: #1fb35c;
+    --bg-color: #f7f3f3;
+    --nav-bg-color: #0bd45f;
     --primary-color: #000000;
     --secondary-color: #ff7235;
     --primary-shadow: #8b8eaf;
@@ -63,19 +62,17 @@ nav {
 }
 
 nav h1 {
-    color: var(--nav-text-color);
+    color: var(--primary-color);
 }
 
 nav a {
-    outline-color: black;
-    color: var(--nav-text-color);
-    outline-width: 1px;
+    color: var(--primary-color);
     transition: var(--transition);
 }
 
 nav a:hover {
-    color: black;
-    border-bottom: 2px solid black;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 nav ul {
